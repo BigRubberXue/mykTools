@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>没眼看工具.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>02AB8F46411119A021335DB28D79653FBAC2FA50</string>
+				<key>dateExpires</key>
+				<string>2026/1/4</string>
+				<key>type</key>
+				<string>Cloud Managed Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>LKZCSZF59W.com.mykbuild.mykTool</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>LKZCSZF59W</string>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>没眼看工具.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>ada9c263-2658-49b2-977c-04d3e5e6564b</string>
+				<key>dateExpires</key>
+				<string>2026/1/4</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.mykbuild.mykTool</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>LKZCSZF59W</string>
+				<key>name</key>
+				<string>jingwei xue</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

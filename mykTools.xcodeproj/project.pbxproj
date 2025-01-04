@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7CD240776266FB528046555 /* Pods_mykToolsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A4CF85DEDB0E01E330818A /* Pods_mykToolsTests.framework */; };
+		CAD5E60C5EBFD8078F086DCC /* Pods_mykTools_mykToolsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A7D7C42CF1559EF8A28979 /* Pods_mykTools_mykToolsUITests.framework */; };
+		F544058F18C88C1D4F9C0427 /* Pods_mykTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BEF3DE2EB91BED8770F7F0 /* Pods_mykTools.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		85A77B032D27BD5700EC9DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A77AEA2D27BD5300EC9DC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A77AF12D27BD5300EC9DC4;
+			remoteInfo = mykTool;
+		};
+		85A77B0D2D27BD5700EC9DC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 85A77AEA2D27BD5300EC9DC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 85A77AF12D27BD5300EC9DC4;
+			remoteInfo = mykTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BA922658F8D9675593B8EF3 /* Pods-没眼看工具.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具.release.xcconfig"; path = "Target Support Files/Pods-没眼看工具/Pods-没眼看工具.release.xcconfig"; sourceTree = "<group>"; };
+		184D7C848B5BF4E964A64534 /* Pods-没眼看工具Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具Tests.release.xcconfig"; path = "Target Support Files/Pods-没眼看工具Tests/Pods-没眼看工具Tests.release.xcconfig"; sourceTree = "<group>"; };
+		1F6B9B1006A84F704D2EA6A1 /* Pods-mykTools-mykToolsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykTools-mykToolsUITests.debug.xcconfig"; path = "Target Support Files/Pods-mykTools-mykToolsUITests/Pods-mykTools-mykToolsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		35E33553E2628ACEA3E94F9F /* Pods-mykTools-mykToolsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykTools-mykToolsUITests.release.xcconfig"; path = "Target Support Files/Pods-mykTools-mykToolsUITests/Pods-mykTools-mykToolsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4A64CEEEE9C68B64CD3BF23B /* Pods-mykTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykTools.release.xcconfig"; path = "Target Support Files/Pods-mykTools/Pods-mykTools.release.xcconfig"; sourceTree = "<group>"; };
+		57A4CF85DEDB0E01E330818A /* Pods_mykToolsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mykToolsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ADD3C900AA8DBA47E5B6A63 /* Pods-没眼看工具-没眼看工具UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具-没眼看工具UITests.debug.xcconfig"; path = "Target Support Files/Pods-没眼看工具-没眼看工具UITests/Pods-没眼看工具-没眼看工具UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		801E66D3791339068A67ECD2 /* Pods-mykToolsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykToolsTests.release.xcconfig"; path = "Target Support Files/Pods-mykToolsTests/Pods-mykToolsTests.release.xcconfig"; sourceTree = "<group>"; };
+		85A77AF22D27BD5300EC9DC4 /* mykTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mykTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A77B022D27BD5700EC9DC4 /* mykToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mykToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		85A77B0C2D27BD5700EC9DC4 /* mykToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mykToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89A7D7C42CF1559EF8A28979 /* Pods_mykTools_mykToolsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mykTools_mykToolsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9278B8CDDB0415F1515B7F55 /* Pods-没眼看工具.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具.debug.xcconfig"; path = "Target Support Files/Pods-没眼看工具/Pods-没眼看工具.debug.xcconfig"; sourceTree = "<group>"; };
+		B07B5BAADB39C52E03521493 /* Pods-没眼看工具-没眼看工具UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具-没眼看工具UITests.release.xcconfig"; path = "Target Support Files/Pods-没眼看工具-没眼看工具UITests/Pods-没眼看工具-没眼看工具UITests.release.xcconfig"; sourceTree = "<group>"; };
+		BEB4B8015C5C0917614D7999 /* Pods-mykToolsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykToolsTests.debug.xcconfig"; path = "Target Support Files/Pods-mykToolsTests/Pods-mykToolsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E5BEF3DE2EB91BED8770F7F0 /* Pods_mykTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mykTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2BEFC7EB82D10047A8854BD /* Pods-mykTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mykTools.debug.xcconfig"; path = "Target Support Files/Pods-mykTools/Pods-mykTools.debug.xcconfig"; sourceTree = "<group>"; };
+		F4B1DB05E89F5E690C444F2A /* Pods-没眼看工具Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-没眼看工具Tests.debug.xcconfig"; path = "Target Support Files/Pods-没眼看工具Tests/Pods-没眼看工具Tests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		85A137302D2A3F0600F01DE5 /* Exceptions for "mykTool" folder in "mykTools" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+				"Preview Content/没眼看工具v1.0.0/没眼看工具.ipa",
+				"Preview Content/没眼看工具v1.0.0/DistributionSummary.plist",
+				"Preview Content/没眼看工具v1.0.0/ExportOptions.plist",
+				"Preview Content/没眼看工具v1.0.0/Packaging.log",
+			);
+			target = 85A77AF12D27BD5300EC9DC4 /* mykTools */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		85A77AF42D27BD5400EC9DC4 /* mykTool */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				85A137302D2A3F0600F01DE5 /* Exceptions for "mykTool" folder in "mykTools" target */,
+			);
+			path = mykTool;
+			sourceTree = "<group>";
+		};
+		85A77B052D27BD5700EC9DC4 /* mykToolTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mykToolTests;
+			sourceTree = "<group>";
+		};
+		85A77B0F2D27BD5700EC9DC4 /* mykToolUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = mykToolUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85A77AEF2D27BD5300EC9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F544058F18C88C1D4F9C0427 /* Pods_mykTools.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77AFF2D27BD5700EC9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7CD240776266FB528046555 /* Pods_mykToolsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77B092D27BD5700EC9DC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD5E60C5EBFD8078F086DCC /* Pods_mykTools_mykToolsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2647F23AAC4F66133AA47FE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5BEF3DE2EB91BED8770F7F0 /* Pods_mykTools.framework */,
+				89A7D7C42CF1559EF8A28979 /* Pods_mykTools_mykToolsUITests.framework */,
+				57A4CF85DEDB0E01E330818A /* Pods_mykToolsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85A77AE92D27BD5300EC9DC4 = {
+			isa = PBXGroup;
+			children = (
+				85A77AF42D27BD5400EC9DC4 /* mykTool */,
+				85A77B052D27BD5700EC9DC4 /* mykToolTests */,
+				85A77B0F2D27BD5700EC9DC4 /* mykToolUITests */,
+				85A77AF32D27BD5300EC9DC4 /* Products */,
+				9F654BF809BC3C8B24BFF032 /* Pods */,
+				2647F23AAC4F66133AA47FE9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+			tabWidth = 4;
+			usesTabs = 0;
+		};
+		85A77AF32D27BD5300EC9DC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85A77AF22D27BD5300EC9DC4 /* mykTools.app */,
+				85A77B022D27BD5700EC9DC4 /* mykToolsTests.xctest */,
+				85A77B0C2D27BD5700EC9DC4 /* mykToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F654BF809BC3C8B24BFF032 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9278B8CDDB0415F1515B7F55 /* Pods-没眼看工具.debug.xcconfig */,
+				0BA922658F8D9675593B8EF3 /* Pods-没眼看工具.release.xcconfig */,
+				7ADD3C900AA8DBA47E5B6A63 /* Pods-没眼看工具-没眼看工具UITests.debug.xcconfig */,
+				B07B5BAADB39C52E03521493 /* Pods-没眼看工具-没眼看工具UITests.release.xcconfig */,
+				F4B1DB05E89F5E690C444F2A /* Pods-没眼看工具Tests.debug.xcconfig */,
+				184D7C848B5BF4E964A64534 /* Pods-没眼看工具Tests.release.xcconfig */,
+				F2BEFC7EB82D10047A8854BD /* Pods-mykTools.debug.xcconfig */,
+				4A64CEEEE9C68B64CD3BF23B /* Pods-mykTools.release.xcconfig */,
+				1F6B9B1006A84F704D2EA6A1 /* Pods-mykTools-mykToolsUITests.debug.xcconfig */,
+				35E33553E2628ACEA3E94F9F /* Pods-mykTools-mykToolsUITests.release.xcconfig */,
+				BEB4B8015C5C0917614D7999 /* Pods-mykToolsTests.debug.xcconfig */,
+				801E66D3791339068A67ECD2 /* Pods-mykToolsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85A77AF12D27BD5300EC9DC4 /* mykTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A77B162D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykTools" */;
+			buildPhases = (
+				A3D9777D5697A85C030B9BF9 /* [CP] Check Pods Manifest.lock */,
+				85A77AEE2D27BD5300EC9DC4 /* Sources */,
+				85A77AEF2D27BD5300EC9DC4 /* Frameworks */,
+				85A77AF02D27BD5300EC9DC4 /* Resources */,
+				DE8BA070E614D90BE93AA38B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				85A77AF42D27BD5400EC9DC4 /* mykTool */,
+			);
+			name = mykTools;
+			productName = mykTool;
+			productReference = 85A77AF22D27BD5300EC9DC4 /* mykTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		85A77B012D27BD5700EC9DC4 /* mykToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A77B192D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykToolsTests" */;
+			buildPhases = (
+				B410C0B094BED3FFE70B41EE /* [CP] Check Pods Manifest.lock */,
+				85A77AFE2D27BD5700EC9DC4 /* Sources */,
+				85A77AFF2D27BD5700EC9DC4 /* Frameworks */,
+				85A77B002D27BD5700EC9DC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85A77B042D27BD5700EC9DC4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85A77B052D27BD5700EC9DC4 /* mykToolTests */,
+			);
+			name = mykToolsTests;
+			productName = mykToolTests;
+			productReference = 85A77B022D27BD5700EC9DC4 /* mykToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		85A77B0B2D27BD5700EC9DC4 /* mykToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85A77B1C2D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykToolsUITests" */;
+			buildPhases = (
+				CD2DFD2BAFC9577E35988C31 /* [CP] Check Pods Manifest.lock */,
+				85A77B082D27BD5700EC9DC4 /* Sources */,
+				85A77B092D27BD5700EC9DC4 /* Frameworks */,
+				85A77B0A2D27BD5700EC9DC4 /* Resources */,
+				36A95C2416BF0DFBD2247182 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				85A77B0E2D27BD5700EC9DC4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				85A77B0F2D27BD5700EC9DC4 /* mykToolUITests */,
+			);
+			name = mykToolsUITests;
+			productName = mykToolUITests;
+			productReference = 85A77B0C2D27BD5700EC9DC4 /* mykToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85A77AEA2D27BD5300EC9DC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					85A77AF12D27BD5300EC9DC4 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					85A77B012D27BD5700EC9DC4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 85A77AF12D27BD5300EC9DC4;
+					};
+					85A77B0B2D27BD5700EC9DC4 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 85A77AF12D27BD5300EC9DC4;
+					};
+				};
+			};
+			buildConfigurationList = 85A77AED2D27BD5300EC9DC4 /* Build configuration list for PBXProject "mykTools" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 85A77AE92D27BD5300EC9DC4;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 85A77AF32D27BD5300EC9DC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85A77AF12D27BD5300EC9DC4 /* mykTools */,
+				85A77B012D27BD5700EC9DC4 /* mykToolsTests */,
+				85A77B0B2D27BD5700EC9DC4 /* mykToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		85A77AF02D27BD5300EC9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77B002D27BD5700EC9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77B0A2D27BD5700EC9DC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36A95C2416BF0DFBD2247182 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mykTools-mykToolsUITests/Pods-mykTools-mykToolsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mykTools-mykToolsUITests/Pods-mykTools-mykToolsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mykTools-mykToolsUITests/Pods-mykTools-mykToolsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D9777D5697A85C030B9BF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mykTools-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B410C0B094BED3FFE70B41EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mykToolsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD2DFD2BAFC9577E35988C31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mykTools-mykToolsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8BA070E614D90BE93AA38B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mykTools/Pods-mykTools-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mykTools/Pods-mykTools-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mykTools/Pods-mykTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85A77AEE2D27BD5300EC9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77AFE2D27BD5700EC9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85A77B082D27BD5700EC9DC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		85A77B042D27BD5700EC9DC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A77AF12D27BD5300EC9DC4 /* mykTools */;
+			targetProxy = 85A77B032D27BD5700EC9DC4 /* PBXContainerItemProxy */;
+		};
+		85A77B0E2D27BD5700EC9DC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 85A77AF12D27BD5300EC9DC4 /* mykTools */;
+			targetProxy = 85A77B0D2D27BD5700EC9DC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		85A77B142D27BD5700EC9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		85A77B152D27BD5700EC9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85A77B172D27BD5700EC9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2BEFC7EB82D10047A8854BD /* Pods-mykTools.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: jingwei xue (J89HMQ56Y5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: jingwei xue (J89HMQ56Y5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mykTool/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LKZCSZF59W;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/mykTool/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = xuejingweidevelop;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		85A77B182D27BD5700EC9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A64CEEEE9C68B64CD3BF23B /* Pods-mykTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development: jingwei xue (J89HMQ56Y5)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development: jingwei xue (J89HMQ56Y5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"mykTool/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LKZCSZF59W;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "$(PROJECT_DIR)/mykTool/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = xuejingweidevelop;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		85A77B1A2D27BD5700EC9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BEB4B8015C5C0917614D7999 /* Pods-mykToolsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LKZCSZF59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = xuejingwei;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mykTools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mykTools";
+			};
+			name = Debug;
+		};
+		85A77B1B2D27BD5700EC9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 801E66D3791339068A67ECD2 /* Pods-mykToolsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = LKZCSZF59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = xuejingwei;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mykTools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/mykTools";
+			};
+			name = Release;
+		};
+		85A77B1D2D27BD5700EC9DC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F6B9B1006A84F704D2EA6A1 /* Pods-mykTools-mykToolsUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mykTool;
+			};
+			name = Debug;
+		};
+		85A77B1E2D27BD5700EC9DC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E33553E2628ACEA3E94F9F /* Pods-mykTools-mykToolsUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mykbuild.mykTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = mykTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85A77AED2D27BD5300EC9DC4 /* Build configuration list for PBXProject "mykTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A77B142D27BD5700EC9DC4 /* Debug */,
+				85A77B152D27BD5700EC9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A77B162D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A77B172D27BD5700EC9DC4 /* Debug */,
+				85A77B182D27BD5700EC9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A77B192D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A77B1A2D27BD5700EC9DC4 /* Debug */,
+				85A77B1B2D27BD5700EC9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85A77B1C2D27BD5700EC9DC4 /* Build configuration list for PBXNativeTarget "mykToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85A77B1D2D27BD5700EC9DC4 /* Debug */,
+				85A77B1E2D27BD5700EC9DC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85A77AEA2D27BD5300EC9DC4 /* Project object */;
+}

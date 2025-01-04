@@ -1,0 +1,6 @@
+framework module Pods_mykToolsTests {
+  umbrella header "Pods-mykToolsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
