@@ -103,8 +103,8 @@ struct MYKWebContainerView: View {
                 }
                 
                 // WebView
-//                WebViewRepresentable()
-//                    .edgesIgnoringSafeArea(.bottom)
+                WebView(urlString: $urlString, webTitle: $webTitle, isLoading: $isLoading, estimatedProgress: $estimatedProgress)
+                   .edgesIgnoringSafeArea(.bottom)
             }
             
             // 悬浮按钮
