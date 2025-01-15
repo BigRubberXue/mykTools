@@ -5,7 +5,7 @@ struct LaunchScreenView: View {
     @State private var size = 0.8
     @State private var opacity = 0.5
     @State private var countdown = 5
-
+    @State private var myTimer: Timer?
     
     // 定义启动屏背景色 #EADEC5
     private let launchScreenBackground = Color(
@@ -49,11 +49,16 @@ struct LaunchScreenView: View {
                             .frame(width: 80, height: 40)
                             .clipShape(Capsule())
                             .padding(.trailing, 20)
-                        Text("\(countdown)s 跳过")
-                            .font(.system(size: 17))
-                            .foregroundColor(.white)
-                            .frame(width: 120, height: 40, alignment: .trailing)
-                            .padding(.trailing, 20)
+                        Button("\(countdown)s 跳过", action: {
+//                            print("LaunchScreenView - click");
+                            finishSplash()
+                        })
+                        .font(.system(size: 17))
+                        .foregroundColor(.white)
+                        .frame(alignment: .trailing)
+                        .padding(.trailing, 30)
+                        .padding(.top, 10)
+                        .buttonStyle(PlainButtonStyle()) // 去掉点击效果
                     }
                 }
                 Spacer()
@@ -61,15 +66,11 @@ struct LaunchScreenView: View {
         }            
         .onAppear {
             startCountdown()
-            // DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) {
-            //     self.isActive = true
-            //     MYKSplashManager.shared.removeLaunchScreen(completion: nil)
-            // }
         }
     }
 
     private func startCountdown() {
-        Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+        self.myTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
             if self.countdown > 0 {
                 self.countdown -= 1
             } else {
@@ -79,6 +80,13 @@ struct LaunchScreenView: View {
                 MYKSplashManager.shared.removeLaunchScreen(completion: nil)
             }
         }
+    }
+    
+    private func finishSplash() {
+        self.myTimer?.invalidate()
+        print("click skip finished")
+        self.isActive = true
+        MYKSplashManager.shared.removeLaunchScreen(completion: nil)
     }
 }
 

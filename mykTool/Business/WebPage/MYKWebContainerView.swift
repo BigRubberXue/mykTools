@@ -2,11 +2,20 @@ import SwiftUI
 import WebKit
 
 struct MYKWebContainerView: View {
-    @State private var urlString = "https://m.bilibili.com/bangumi/play/ep1349281" // 默认URL
+    @State private var urlString = "https://www.baidu.com" // 默认URL
     @State private var webTitle: String = ""
     @State private var isLoading = false
     @State private var estimatedProgress: Double = 0
     @State private var showFloatingButton = false
+    
+    init() {
+//        self.urlString = urlString
+//        self.webTitle = webTitle
+//        self.isLoading = isLoading
+//        self.estimatedProgress = estimatedProgress
+//        self.showFloatingButton = showFloatingButton
+        print("web - init")
+    }
     
     // 处理URL输入
     private func handleURLInput() {
@@ -74,7 +83,7 @@ struct MYKWebContainerView: View {
                         // 地址栏
                         TextField("输入网址", text: $urlString)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                            .autocapitalization(.none)
+                            .textInputAutocapitalization(.none)
                             .keyboardType(.URL)
                             .onSubmit {
                                 handleURLInput()
@@ -84,24 +93,38 @@ struct MYKWebContainerView: View {
                             .cornerRadius(8)
                             .shadow(color: Color.black.opacity(0.1), radius: 2, x: 0, y: 2)
                         
-                        // 刷新按钮
-                        Button(action: {
-                            WebViewStore.shared.reload()
-                        }) {
-                            Image(systemName: isLoading ? "xmark" : "arrow.clockwise")
-                                .font(.system(size: 18, weight: .medium))
-                                .foregroundColor(.blue)
-                                .padding(8)
-                                .background(Color.blue.opacity(0.1))
-                                .clipShape(Circle())
+                        HStack(spacing: 16) {
+                            // 刷新按钮
+                            Button(action: {
+                                WebViewStore.shared.reload()
+                            }) {
+                                Image(systemName: "paperplane")
+                                    .font(.system(size: 18, weight: .medium))
+                                    .foregroundColor(.blue)
+                                    .padding(8)
+                                    .background(Color.blue.opacity(0.1))
+                                    .clipShape(Circle())
+                            }
+                            
+                            // 刷新按钮
+                            Button(action: {
+                                WebViewStore.shared.reload()
+                            }) {
+                                Image(systemName: isLoading ? "xmark" : "arrow.clockwise")
+                                    .font(.system(size: 18, weight: .medium))
+                                    .foregroundColor(.blue)
+                                    .padding(8)
+                                    .background(Color.blue.opacity(0.1))
+                                    .clipShape(Circle())
+                            }
                         }
+                        
                     }
                     .padding(.horizontal, 12)
                     .padding(.vertical, 8)
                     .background(Color(.systemBackground))
                     .shadow(color: Color.black.opacity(0.1), radius: 4, x: 0, y: 2)
                 }
-                
                 // WebView
                 WebView(urlString: $urlString, webTitle: $webTitle, isLoading: $isLoading, estimatedProgress: $estimatedProgress)
                    .edgesIgnoringSafeArea(.bottom)
@@ -276,8 +299,6 @@ class WebViewStore: ObservableObject {
         configuration.allowsPictureInPictureMediaPlayback = true
         // 设置媒体播放策略
         configuration.mediaTypesRequiringUserActionForPlayback = []
-//        configuration.setURLSchemeHandler(WebViewCoordinator(), forURLScheme: "http")
-//        configuration.setURLSchemeHandler(WebViewCoordinator(), forURLScheme: "https")
         configuration.setURLSchemeHandler(WebViewCoordinator(), forURLScheme: "baiduboxapp")
 
         webView = WKWebView(frame: .zero, configuration: configuration)
@@ -323,30 +344,25 @@ struct WebView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> WKWebView {
         // 创建 WKWebView 配置
-        let configuration = WKWebViewConfiguration()
-        
+//        let configuration = WKWebViewConfiguration()
+        print("makeUIView: WKWebView is being created")
+
         // 创建 WebView
         let webView = WebViewStore.shared.webView
         webView.navigationDelegate = context.coordinator
         webView.uiDelegate = context.coordinator
         
-        // // 添加多个 URL Scheme 拦截
-        // let schemesToHandle = ["https", "http", "baiduboxapp"]
-        // schemesToHandle.forEach { scheme in
-        //     configuration.setURLSchemeHandler(context.coordinator, forURLScheme: scheme)
-        // }
-        
-        if let url = URL(string: urlString) {
-            webView.load(URLRequest(url: url))
-        }
+//        if let url = URL(string: urlString) {
+//            webView.load(URLRequest(url: url))
+//        }
         
         return webView
     }
     
     func updateUIView(_ webView: WKWebView, context: Context) {
         // 更新逻辑
+        print("updateUIView: WKWebView is being updated")
     }
-    
     
 }
 
@@ -358,6 +374,10 @@ class WebViewCoordinator: NSObject, WKNavigationDelegate, WKUIDelegate, WKURLSch
 //    }
     
     // MARK: - WKNavigationDelegate
+    
+    func webView(_ webView: WKWebView, didFailProvisionalNavigation navigation: WKNavigation!, withError error: any Error) {
+        print("web - 🔄 页面加载失败")
+    }
     
     // 决定是否允许加载
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
